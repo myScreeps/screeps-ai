@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Jomik/screeps-ai#readme",
   "devDependencies": {
+    "@types/screeps": "^3.3.0",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",

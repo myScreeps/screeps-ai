@@ -1095,14 +1095,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarn-tool/resolve-package@npm:^1.0.40":
-  version: 1.0.46
-  resolution: "@yarn-tool/resolve-package@npm:1.0.46"
+"@yarn-tool/resolve-package@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@yarn-tool/resolve-package@npm:2.0.3"
   dependencies:
-    pkg-dir: "npm:< 6 >= 5"
-    tslib: "npm:^2.3.1"
-    upath2: "npm:^3.1.12"
-  checksum: 49ece5c526d2bac1f896f360b6a736bf4da6f2489aaa3ea8a5dee5446eecdd9d6697c96a080060ece6d8a4b11b9f7816546ae8d2f42df45400f2fe1e2399383a
+    pkg-dir: "npm:<6 >=5"
+    tslib: "npm:^2"
+    upath2: "npm:^3.1.15"
+  checksum: 9d9548867a09747ae048e7696d23d8337c1d853c675d79394570cdb02b897c42adacebd59eeaa92a2c72463ea399ff074c53e2f77f71cd96de46802ade0b7cd1
   languageName: node
   linkType: hard
 
@@ -1405,8 +1405,11 @@ __metadata:
     "@rollup/plugin-node-resolve": "npm:^13.2.1"
     "@types/lodash": "npm:3.10.2"
     "@types/screeps": "npm:^3.3.0"
-    os: "workspace:*"
+    "@yarn-tool/resolve-package": "npm:^2.0.3"
+    oscore: "workspace:*"
     rollup: "npm:^2.71.1"
+    rollup-plugin-cleaner: "npm:^1.0.0"
+    rollup-plugin-cleanup: "npm:^3.2.1"
     rollup-plugin-clear: "npm:^2.0.7"
     rollup-plugin-screeps: "npm:^1.0.1"
     rollup-plugin-typescript2: "npm:^0.31.2"
@@ -2136,6 +2139,13 @@ __metadata:
   version: 5.3.0
   resolution: "estraverse@npm:5.3.0"
   checksum: 4db420d3f0291d3c42e3700aee2986ec1ca8384224236da9441e67555c8af181fe5f883b0b312021ed475f0c138282066b0f5cb2240ee4a0c2ec5142274162d1
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "estree-walker@npm:0.6.1"
+  checksum: 9cca986319573e0820299a39a5d345a00ec959a90565c116e626859c7dbfbec853a169263c2529b4993725ac52204077cd52b5a6b8818eb858a2f95a40d026e5
   languageName: node
   linkType: hard
 
@@ -3398,6 +3408,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-cleanup@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "js-cleanup@npm:1.2.0"
+  dependencies:
+    magic-string: "npm:^0.25.7"
+    perf-regexes: "npm:^1.0.1"
+    skip-regex: "npm:^1.0.2"
+  checksum: 09cd69ce50684d6bb63735caba09b11f24bdf6ea57209915c13247e30ef92292c97e60678116ab1628deb3e6b62f125c65e1ecff16128a9234249cce80a3bdfa
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -3983,9 +4004,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"os@workspace:*, os@workspace:packages/os":
+"oscore@workspace:*, oscore@workspace:packages/os":
   version: 0.0.0-use.local
-  resolution: "os@workspace:packages/os"
+  resolution: "oscore@workspace:packages/os"
   dependencies:
     "@types/jest": "npm:^27.4.1"
     jest: "npm:^27.5.1"
@@ -4089,12 +4110,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-is-network-drive@npm:^1.0.13":
-  version: 1.0.13
-  resolution: "path-is-network-drive@npm:1.0.13"
+"path-is-network-drive@npm:^1.0.16":
+  version: 1.0.16
+  resolution: "path-is-network-drive@npm:1.0.16"
   dependencies:
-    tslib: "npm:^2.3.1"
-  checksum: 4d1b7bda5e4cfa0f9191c432c02ef65dbefc38c7477b407761bace4d9617501f7282781e31bfa64ddbe3f9aaa8f182c776d1f42425021499526559243cea5729
+    tslib: "npm:^2"
+  checksum: c03a34e01da7d373023ebe5ba1ca6838fcb01f5b851cfe38e0134a0c6fecca8e1f55d5e48baf2e997a15d366321f8dbee8ba10a8e16e81459117347b7bc9c673
   languageName: node
   linkType: hard
 
@@ -4112,12 +4133,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-strip-sep@npm:^1.0.10":
-  version: 1.0.10
-  resolution: "path-strip-sep@npm:1.0.10"
+"path-strip-sep@npm:^1.0.13":
+  version: 1.0.13
+  resolution: "path-strip-sep@npm:1.0.13"
   dependencies:
-    tslib: "npm:^2.3.1"
-  checksum: 15965dfa5044fc6b9b23d7114c927126fd9acc6d2ac06ee804b49cde30c62e223aa4d2b58ee05c5b7cda94f0dd8a916037cd00bcc97c4bc6cc4ad3482709e6ba
+    tslib: "npm:^2"
+  checksum: 047c4f8937119efa5f34b5ac25003a577b842bb244eaf8066a6f9ea463b735e5589bf5c959ee73432d0487915cfb5ae9525652ed583f90b83f6e148bde876f91
   languageName: node
   linkType: hard
 
@@ -4125,6 +4146,13 @@ __metadata:
   version: 4.0.0
   resolution: "path-type@npm:4.0.0"
   checksum: 6a9330ad8d96f31e929feb414cde2959078379ba5a48c9e3eab34f280d7850eec6a0fa3ed5be9150e9e4d7df5139c1ae92f891b18167528553a11382d8f54183
+  languageName: node
+  linkType: hard
+
+"perf-regexes@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "perf-regexes@npm:1.0.1"
+  checksum: 94ab8a42c065f078aff7508db9ab6ccf752e99f87bd2845d50975e298a54730cefa9119cbe90c6a9c90f2c640baff19c11fcf54c268ac67388cd6fefe567cdd8
   languageName: node
   linkType: hard
 
@@ -4149,7 +4177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkg-dir@npm:< 6 >= 5":
+"pkg-dir@npm:<6 >=5":
   version: 5.0.0
   resolution: "pkg-dir@npm:5.0.0"
   dependencies:
@@ -4360,7 +4388,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^2.6.2":
+"rimraf@npm:^2.6.2, rimraf@npm:^2.6.3":
   version: 2.7.1
   resolution: "rimraf@npm:2.7.1"
   dependencies:
@@ -4379,6 +4407,29 @@ __metadata:
   bin:
     rimraf: bin.js
   checksum: b786c9ad52df9fbcd9c7120e105f3150b83b39dd87d9235a93b0c7e806575e1e68936504ff64563dbe67b3f8bbbc00bdfff586157d402ee8990e7143456511c0
+  languageName: node
+  linkType: hard
+
+"rollup-plugin-cleaner@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "rollup-plugin-cleaner@npm:1.0.0"
+  dependencies:
+    rimraf: "npm:^2.6.3"
+  peerDependencies:
+    rollup: "> 1.0"
+  checksum: 5aa195166129098c904bbcd55c32f64c63cf20d1819879074c554dc8d0ce81585b9693a65ca49951b8b6d4a2761b534fc9e2fc6c529bdd3bf94ed9753b5141ff
+  languageName: node
+  linkType: hard
+
+"rollup-plugin-cleanup@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "rollup-plugin-cleanup@npm:3.2.1"
+  dependencies:
+    js-cleanup: "npm:^1.2.0"
+    rollup-pluginutils: "npm:^2.8.2"
+  peerDependencies:
+    rollup: ">=2.0"
+  checksum: 9741274fc9b13a2429b98f73c1094a0b143442e2a254b7e1073810c815ce2d973a72750e0301987b107987cd01d6b7a0f114f19593efcc01e9a68c697247a74a
   languageName: node
   linkType: hard
 
@@ -4406,7 +4457,6 @@ __metadata:
   resolution: "rollup-plugin-typescript2@npm:0.31.2"
   dependencies:
     "@rollup/pluginutils": "npm:^4.1.2"
-    "@yarn-tool/resolve-package": "npm:^1.0.40"
     find-cache-dir: "npm:^3.3.2"
     fs-extra: "npm:^10.0.0"
     resolve: "npm:^1.20.0"
@@ -4415,6 +4465,15 @@ __metadata:
     rollup: ">=1.26.3"
     typescript: ">=2.4.0"
   checksum: 8609093a00ac3a26c3b15e8434deaa1c30587843b7e22a64bed7aaee363e9a0af9518a8ebd8d32aa73aba581ce80a8022b6e0fdbbacda918f6e4b025a29fffce
+  languageName: node
+  linkType: hard
+
+"rollup-pluginutils@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "rollup-pluginutils@npm:2.8.2"
+  dependencies:
+    estree-walker: "npm:^0.6.1"
+  checksum: 9b64e4aa2dc18adacbd97ec6e210b0ea37484331c7f65a87eb5d523dee88170d52c4b758c81722558d266f255708615ea75b6a625f0979b8cf5b13089db1449c
   languageName: node
   linkType: hard
 
@@ -4436,6 +4495,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@types/screeps": "npm:^3.3.0"
     "@typescript-eslint/eslint-plugin": "npm:^5.14.0"
     "@typescript-eslint/parser": "npm:^5.14.0"
     eslint: "npm:^8.10.0"
@@ -4580,6 +4640,13 @@ __metadata:
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
   checksum: 35461425fe53c7cf8e2abdc5cef4568247b41bade0b7fcf316923aae6e3a59004d35e6a7e26f3be345b8fc7091cf2d589974d0df5469a05d049d2f95974dd17d
+  languageName: node
+  linkType: hard
+
+"skip-regex@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "skip-regex@npm:1.0.2"
+  checksum: 5775313bfdc461d54134268410e3da7661377103834644728ed87b28392f684f48b6d8827e68305eafa7135c83f5ce6d1d1d6be44f3b3a9b50d4315b24edf0ea
   languageName: node
   linkType: hard
 
@@ -4933,7 +5000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.3.1":
+"tslib@npm:^2, tslib@npm:^2.3.1":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 022a70708abbc3491734959effd9a87e6e0af5932b61d0c9f1d07b8b80cabbbfc9fc9e9c0fe86e5ab2d32d766ae30117edf00b02d170ff255ab7e60361a4b711
@@ -5071,16 +5138,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"upath2@npm:^3.1.12":
-  version: 3.1.12
-  resolution: "upath2@npm:3.1.12"
+"upath2@npm:^3.1.15":
+  version: 3.1.15
+  resolution: "upath2@npm:3.1.15"
   dependencies:
-    path-is-network-drive: "npm:^1.0.13"
-    path-strip-sep: "npm:^1.0.10"
-    tslib: "npm:^2.3.1"
-  peerDependencies:
-    "@types/node": "*"
-  checksum: 453ef608677572276979a04a8de3d805cc8e1182d999f963e8b972e1aa95f76c7bcd542857bf7a62001d64583148049eb9866ea3eb34c8d0291770ccb8887018
+    "@types/node": "npm:*"
+    path-is-network-drive: "npm:^1.0.16"
+    path-strip-sep: "npm:^1.0.13"
+    tslib: "npm:^2"
+  checksum: 7e371a33d36fb841bbcfc056c5950bb3b72c0f7387f676d7edd2e6bebc4ad10ab5a5a6d887ec934c8ec272df138f7d3af1e89fc83ccb1ffa744cc53ec817c5db
   languageName: node
   linkType: hard
 

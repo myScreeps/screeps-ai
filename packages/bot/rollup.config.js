@@ -19,13 +19,13 @@ if (!dest) {
 export default {
   input: 'src/main.ts',
   output: {
-    file: 'dist/main.js',
+    file: "C:\\Users\\Neal\\AppData\\Local\\Screeps\\scripts\\screeps.com\\main\\main.js",
     format: 'cjs',
     sourcemap: true,
   },
 
   plugins: [
-    clear({ targets: ['dist'] }),
+    clear({ targets: ["C:\\Users\\Neal\AppData\\Local\\Screeps\\scripts\\screeps.com\main"] }),
     resolve({ rootDir: 'src', preferBuiltins: false }),
     commonjs(),
     typescript({ tsconfig: './tsconfig.json' }),

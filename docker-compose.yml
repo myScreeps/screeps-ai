@@ -9,7 +9,7 @@ services:
     environment:
       MONGO_HOST: mongo
       REDIS_HOST: redis
-      STEAM_KEY: ${STEAM_KEY:?"Missing steam key"}
+      STEAM_KEY: "8e5d5922-7981-429c-8e35-fbe773904c5c"
     restart: unless-stopped
     depends_on:
       - mongo
@@ -32,9 +32,9 @@ services:
     working_dir: /home/root/client
     command: sh -c 'npm install --log-level=error --no-progress laverdet/screeps-steamless-client && npx screeps-steamless-client --package /screeps.nw --host 0.0.0.0 --internal_backend http://screeps:21025 --backend http://localhost:21025'
     environment:
-      SCREEPS_NW_PATH: ${SCREEPS_NW_PATH:?"Missing screeps nw file"}
+      SCREEPS_NW_PATH: 'S:\SteamLibrary\steamapps\common\Screeps\'
     volumes:
-      - ${SCREEPS_NW_PATH}:/screeps.nw
+      - 'S:\SteamLibrary\steamapps\common\Screeps\screeps.nw'
 
     ports:
       - 8080:8080/tcp

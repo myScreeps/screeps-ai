@@ -12,5 +12,8 @@
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": false,
     "allowUnreachableCode": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+]
 }
